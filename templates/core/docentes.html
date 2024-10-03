@@ -1,0 +1,105 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docentes</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
+</head>
+<body>
+    <div class="fluid-container"></div>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'core/images/logousm.png' %}"  id="logo" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" >Inicio <span class="sr-only">(actual)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'carreras' %}">Carreras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'docentes' %}">Docentes</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+
+
+        <div class="container mt-4">
+            <h1 class="text-center">Últimas Noticias</h1>
+    
+            <div class="row">
+                <!-- Tarjeta de noticia 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título de la Noticia 1</h5>
+                            <p class="card-text">Descripción breve de la noticia 1. Puedes agregar más detalles aquí.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta de noticia 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Título de la Noticia 2</h5>
+                            <p class="card-text">Descripción breve de la noticia 2. Puedes agregar más detalles aquí.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta de noticia 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Noticia 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Título de la Noticia 3</h5>
+                            <p class="card-text">Descripción breve de la noticia 3. Puedes agregar más detalles aquí.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-light py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Acerca de Nosotros</h5>
+                        <p>Descripción breve de tu empresa o proyecto. Aquí puedes incluir información relevante.</p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <h5>Síguenos</h5>
+                        <a href="#" class="text-light">Facebook</a><br>
+                        <a href="#" class="text-light">Twitter</a><br>
+                        <a href="#" class="text-light">Instagram</a>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="text-center">
+                    <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
